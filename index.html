@@ -1,1 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Malla Curricular Interactiva</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Malla Curricular Interactiva</h1>
 
+        <div class="filter-controls">
+            <button id="filter-all" class="active">Mostrar Todos</button>
+            <button id="filter-completed">Completados</button>
+            <button id="filter-pending">Pendientes</button>
+        </div>
+
+        <div class="curriculum-grid">
+            <div class="semester">
+                <h2>Semestre 1</h2>
+                <div class="modules-container">
+                    <div class="module" data-status="pending" data-description="Introducción a la programación y algoritmos básicos.">
+                        <h3>Programación I</h3>
+                        <p>Créditos: 6</p>
+                    </div>
+                    <div class="module" data-status="pending" data-description="Principios fundamentales de las matemáticas.">
+                        <h3>Matemáticas I</h3>
+                        <p>Créditos: 5</p>
+                    </div>
+                    <div class="module" data-status="pending" data-description="Desarrollo de habilidades comunicativas y redacción.">
+                        <h3>Comunicación Efectiva</h3>
+                        <p>Créditos: 4</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="semester">
+                <h2>Semestre 2</h2>
+                <div class="modules-container">
+                    <div class="module" data-status="pending" data-description="Conceptos avanzados de programación orientada a objetos.">
+                        <h3>Programación II</h3>
+                        <p>Créditos: 6</p>
+                    </div>
+                    <div class="module" data-status="pending" data-description="Cálculo diferencial e integral.">
+                        <h3>Cálculo I</h3>
+                        <p>Créditos: 6</p>
+                    </div>
+                    <div class="module" data-status="pending" data-description="Fundamentos de bases de datos relacionales.">
+                        <h3>Bases de Datos I</h3>
+                        <p>Créditos: 5</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="semester">
+                <h2>Semestre 3</h2>
+                <div class="modules-container">
+                    <div class="module" data-status="pending" data-description="Desarrollo de aplicaciones web con frameworks.">
+                        <h3>Desarrollo Web</h3>
+                        <p>Créditos: 7</p>
+                    </div>
+                    <div class="module" data-status="pending" data-description="Estructuras de datos y algoritmos avanzados.">
+                        <h3>Estructuras de Datos</h3>
+                        <p>Créditos: 6</p>
+                    </div>
+                    <div class="module" data-status="pending" data-description="Diseño y análisis de sistemas operativos.">
+                        <h3>Sistemas Operativos</h3>
+                        <p>Créditos: 5</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="semester">
+                <h2>Semestre 4</h2>
+                <div class="modules-container">
+                    <div class="module" data-status="pending" data-description="Principios de inteligencia artificial y machine learning.">
+                        <h3>Inteligencia Artificial</h3>
+                        <p>Créditos: 7</p>
+                    </div>
+                    <div class="module" data-status="pending" data-description="Redes de computadoras y protocolos de comunicación.">
+                        <h3>Redes de Computadoras</h3>
+                        <p>Créditos: 6</p>
+                    </div>
+                    <div class="module" data-status="pending" data-description="Metodologías ágiles y gestión de proyectos.">
+                        <h3>Gestión de Proyectos</h3>
+                        <p>Créditos: 5</p>
+                    </div>
+                </div>
+            </div>
+            
+            </div>
+    </div>
+
+    <div id="module-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h3 id="modal-title"></h3>
+            <p id="modal-description"></p>
+            <p id="modal-credits"></p>
+            <button id="toggle-status-button"></button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
